@@ -17,11 +17,14 @@ test("all wallet network selectors enable and default to mainnet", () => {
   }
   assert.doesNotMatch(`${template}\n${app}`, /option value="mainnet"[^>]*disabled/);
   assert.doesNotMatch(app, /hodlForceTestnet|temporarily disabled/);
-  assert.match(app, /network:"mainnet"/);
+  assert.match(app, /network:\s*"mainnet"/);
 });
 
 test("private alternate account exports are visible without an accordion", () => {
-  assert.match(app, /if\(includePrivate\)return`<div class="wallet-advanced">\$\{privateExport\}<\/div>`/);
+  assert.match(
+    app,
+    /if\s*\(includePrivate\)\s*return\s*`<div class="wallet-advanced">\$\{privateExport\}<\/div>`/,
+  );
   assert.doesNotMatch(app, /Advanced private export/);
 });
 
