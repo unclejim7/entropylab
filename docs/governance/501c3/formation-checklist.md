@@ -8,12 +8,13 @@
 
 - [ ] **Recruit at least one, ideally two, genuinely independent board members before or immediately after incorporating.** A board consisting only of Mr.Hodl and Wicked — who are also the people most likely to request contributor payment — is the exact fact pattern the IRS's private inurement and intermediate sanctions rules are built to catch. This isn't optional paperwork; without an independent voice on compensation and major decisions, the entity's tax-exempt status is genuinely at risk if either founder is ever paid. This was flagged as the reason standalone 501(c)(3) was deprioritized earlier — revisit that concern here rather than treating it as solved by structure alone.
 - [ ] Identify candidates: a respected figure in Bitcoin/security open-source, a nonprofit-experienced advisor, or someone from an allied project (e.g., a maintainer at another Bitcoin-FOSS project with no financial stake in EntropyLab). They don't need deep technical expertise — they need independence and a willingness to actually review compensation requests.
+- [ ] **Know that one independent director is not enough to ever pay anyone.** The Bylaws (§6.4) and Comp Policy (§4.3) both require *two* Independent Directors able to form a quorum before compensation to a disqualified person — including either founder — can be approved. Recruiting one gets the entity formed; a second is needed before the first contributor payment.
 
 ## 1. Pre-formation decisions
 
 - [ ] **Formation state.** Nonprofits generally incorporate in the state where they'll operate (no Delaware-style advantage the way there sometimes is for for-profits). Check your state's nonprofit corporation filing requirements and fees.
 - [ ] **Organization name.** Confirm "EntropyLab" (or a formal legal name, e.g., "EntropyLab Foundation") is available with your Secretary of State and doesn't conflict with existing nonprofits.
-- [ ] **Initial board composition and size.** Lock in at least 3 directors before filing if possible (some states require a minimum of 3 for nonprofits; even where 1–2 is legally allowed, 2-founder-only boards are the inurement risk flagged above). [TBD: names, whether Mr.Hodl/Wicked use legal names or pseudonymous arrangements — check your state's disclosure rules, since nonprofit officer/director info is often more public than LLC member info.]
+- [ ] **Initial board composition and size.** Lock in at least 3 directors before filing if possible (some states require a minimum of 3 for nonprofits; even where 1–2 is legally allowed, 2-founder-only boards are the inurement risk flagged above). [TBD: names, whether Mr.Hodl/Wicked use legal names or pseudonymous arrangements — check your state's disclosure rules, since nonprofit officer/director info is often more public than LLC member info.] Note this is separate from federal filings: the EIN application and Form 1023 require a real legal name and SSN/ITIN for a "responsible party" regardless of what a state's public disclosure rules allow — a state permitting pseudonymous records doesn't extend to the IRS.
 - [ ] **Registered agent.** Required in every state; a commercial registered agent service is worth it if board members prefer not to use personal addresses as public record.
 - [ ] **Statement of purpose.** Needs to tie to a recognized IRS-exempt purpose (educational/charitable — open-source security education and tooling generally qualifies under "educational," similar to how other Bitcoin-FOSS nonprofits and fiscal sponsors are organized). Draft this carefully; it drives both the Articles of Incorporation and the Form 1023 narrative.
 
@@ -37,6 +38,7 @@
 - [ ] Adopt a **Conflict of Interest Policy** (included as an annex to the Bylaws draft) — the IRS Form 1023 specifically asks whether you've adopted one and will often accept the IRS's own template language; having one in place before filing strengthens the application.
 - [ ] Adopt the **Contributor Compensation Policy** (rewritten separately around nonprofit rules) — formally approved by the board, with independent-director sign-off documented in meeting minutes.
 - [ ] Have both Bylaws and Articles reviewed by a lawyer familiar with nonprofit formation in your state before filing/adopting — worth the spend here more than almost anywhere else in this process, given the personal-liability and exempt-status stakes.
+- [ ] Decide whether to purchase Directors & Officers (D&O) liability insurance (bylaws §11.2) — indemnification in the Bylaws covers good-faith conduct, but doesn't replace insurance, and matters more here given directors may prefer to serve pseudonymously and are otherwise personally exposed.
 
 ## 5. State-level follow-up
 
@@ -53,6 +55,7 @@
 ## 7. Bookkeeping and ongoing compliance
 
 - [ ] Set up bookkeeping tracking donations, grants, and contractor payments separately — needed for both internal governance and the annual **Form 990** (or 990-EZ/990-N depending on size), which is public.
+- [ ] Set up contractor tax paperwork for both US and non-US paid contributors before the first payment: Form W-9/1099-NEC for US persons, Form W-8BEN (or W-8BEN-E)/1042-S for non-US persons. A Bitcoin-FOSS contributor pool is likely to be predominantly non-US, so treat this as day-one setup, not an edge case (see Comp Policy §5).
 - [ ] Calendar recurring deadlines:
   - **Form 990** family — due the 15th day of the 5th month after fiscal year-end (extendable), and publicly disclosable once filed
   - State annual report / registered agent renewal

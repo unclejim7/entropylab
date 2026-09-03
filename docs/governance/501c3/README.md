@@ -24,13 +24,17 @@ The prior working session had settled on an **LLC taxed as a partnership** and e
 ## The one decision that gates everything
 **Recruit at least one, ideally two, independent board members** before or immediately after incorporating. A board of just Mr.Hodl and Wicked — who are also the people most likely to request paid work — is the exact fact pattern IRS private inurement / intermediate sanctions (IRC §4958) rules are built to catch. Every other governance mechanism in these docs (compensation approval, treasury multisig, conflict-of-interest recusal) assumes this gets solved first.
 
+**One recruit is enough to incorporate, not enough to pay anyone.** Bylaws §6.4 sets a hard floor of *two* Independent Directors able to form a quorum before any compensation to a disqualified person (which includes both founders) can be approved through the process in Article 6 / the Comp Policy §4.3. Recruiting a single independent director unblocks formation but leaves the Organization unable to pay contributors — including the founders — until a second is seated. Plan for this gap explicitly rather than discovering it when the first payment request comes in.
+
 ## Other open [TBD] items across the docs
 - Formation state
 - Board size and independence threshold (bylaws §2.2)
+- Real legal names/SSN-ITIN for federal filings (EIN application, Form 1023) — a state may allow pseudonymous public records, but the IRS still requires a real-identity "responsible party"; pseudonyms alone don't satisfy that (bylaws §2.3)
 - Officer roles/assignments (bylaws Article 4)
 - Multisig treasury key holders, including whether an independent director holds a key (bylaws §7.4)
 - Dissolution recipient — name one now or leave to future Board determination (bylaws §10.2)
 - Repo/domain disposition on dissolution (bylaws §10.3)
+- Whether to purchase D&O insurance and at what coverage level (bylaws §11.2)
 - Form 1023 vs. 1023-EZ eligibility (depends on projected gross receipts ≤$50k/yr and assets ≤$250k — confirm current IRS thresholds)
 
 ## Also referenced but not included in this package

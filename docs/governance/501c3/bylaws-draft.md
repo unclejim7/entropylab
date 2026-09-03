@@ -22,13 +22,13 @@
 
 2.2 **Number and Composition.** The Board shall consist of no fewer than [3] directors. **At least [one-third / a majority]** of directors shall be Independent Directors — defined as individuals with no financial interest in any compensation paid by the Organization and no family or business relationship with a compensated director, officer, or contractor. [Decide the exact threshold; more independence is a stronger safeguard and a stronger signal to the IRS, but don't set a number you can't realistically staff.]
 
-2.3 **Initial Directors.** [TBD — Mr.Hodl, Wicked, plus [name(s)] of independent director(s).]
+2.3 **Initial Directors.** [TBD — Mr.Hodl, Wicked, plus [name(s)] of independent director(s).] **Note on pseudonymous directors:** state disclosure rules for who appears on public record vary and should be checked (see the formation checklist's board-composition item), but that is a separate question from federal filings — the EIN application (Form SS-4) and Form 1023 both require a real legal name and SSN/ITIN for a "responsible party," so pseudonyms alone cannot stand in for the individuals who sign those federal filings regardless of what a state's corporate filings allow publicly.
 
 2.4 **Term.** Directors serve [1–3 year, staggered/renewable] terms. [TBD.]
 
 2.5 **Removal and Vacancies.** A director may be removed [with/without cause] by a vote of [two-thirds] of the remaining directors. Vacancies are filled by the remaining Board.
 
-2.6 **Compensation of Directors.** Directors may be compensated for scoped work performed for the Organization (e.g., engineering, security review) under the Contributor Compensation Policy, but **serving as a director does not itself carry compensation**, and any director being compensated for other work must recuse from Board votes approving that compensation per Article 6.
+2.6 **Compensation of Directors.** Directors may be compensated for scoped work performed for the Organization (e.g., engineering, security review) under the Contributor Compensation Policy, but **serving as a director does not itself carry compensation**. Per Article 6.1, a director being compensated for other work is not merely required to recuse from the vote approving that compensation — they **may not be present for the discussion or vote at all**, beyond answering factual questions if invited.
 
 ---
 
@@ -74,7 +74,7 @@
 
 6.3 **Contemporaneous Documentation.** The approving body must document, at or before the next meeting following the decision: the terms approved and date, the members present and voting, the comparability data relied on, and how it was obtained. This documentation must be contemporaneous — created before the payment is made or within a reasonable time after — not reconstructed later.
 
-6.4 **Minimum Independent Body.** If at any time the Organization has fewer than [two] Independent Directors able to form a quorum for a compensation vote, no compensation to a disqualified person may be approved until an additional independent director is seated or a qualified outside advisor is engaged to fill this role on an ad hoc basis. **This is a harder floor than the LLC's "get a third disinterested party" fallback** — under §4958, an inadequately independent approval process can itself undermine the rebuttable presumption even if the amount was objectively reasonable.
+6.4 **Minimum Independent Body.** If at any time the Organization has fewer than [two] Independent Directors able to form a quorum for a compensation vote, no compensation to a disqualified person may be approved until an additional independent director is seated or a qualified outside advisor is engaged to fill this role on an ad hoc basis. **This is a harder floor than the LLC's "get a third disinterested party" fallback** — under §4958, an inadequately independent approval process can itself undermine the rebuttable presumption even if the amount was objectively reasonable. **Consequence to plan around:** the formation checklist's gate (§0) only requires recruiting one independent director to get moving, but this floor requires two before *any* disqualified person — including either founder — can be paid through this process. Recruiting only one independent director means the Organization can incorporate and operate, but cannot compensate anyone under this Article until a second independent director is seated.
 
 6.5 **Prohibition on Private Inurement.** Notwithstanding any approval under this Article, no compensation arrangement may result in net earnings inuring to the benefit of any director, officer, or founder beyond reasonable payment for services actually rendered. Guaranteed profit-sharing, equity-like arrangements, or payments not tied to scoped, documented work are prohibited regardless of approval, since these would risk the Organization's exempt status outright rather than merely being subject to excise tax.
 
@@ -89,6 +89,8 @@
 7.3 **Annual Filings.** The Treasurer (or an engaged bookkeeper/accountant) shall ensure Form 990 (or 990-EZ/990-N as applicable) is filed annually and made available for public inspection as required by law.
 
 7.4 **BTC Treasury.** The Organization's BTC treasury shall be held in a multisignature wallet requiring [2-of-3, with at least one key held by or accessible to an Independent Director] signatures for outbound transactions. [Strongly recommend including an independent key holder here, mirroring the independent-approval principle in Article 6 — a treasury controlled entirely by the two founders undercuts the independence built into the compensation process.]
+
+7.5 **No Loans to Directors or Officers.** The Organization shall not lend money or extend credit to any director or officer, consistent with the loan prohibitions imposed on nonprofit corporations in most states. This is a flat prohibition, not subject to approval under Article 6 or waiver by the Board.
 
 ---
 
@@ -126,6 +128,14 @@
 
 ---
 
+## Article 11 — Indemnification & Insurance
+
+11.1 **Indemnification.** The Organization shall indemnify, to the fullest extent permitted by the law of the formation state, any director or officer against reasonable expenses (including legal fees) actually and necessarily incurred in connection with any proceeding arising from their service to the Organization, provided they acted in good faith and in a manner reasonably believed to be in the Organization's best interests. This does not cover conduct involving willful misconduct, fraud, or a knowing violation of law, nor does it cover the excise taxes imposed personally on a disqualified person under IRC §4958 for an excess benefit transaction.
+
+11.2 **Insurance.** [TBD — the Board should decide whether to purchase Directors & Officers (D&O) liability insurance once the Organization has a bank account and budget; this is common practice for nonprofits and is especially relevant here given directors may prefer to serve pseudonymously and are otherwise personally exposed for any conduct indemnification doesn't reach.]
+
+---
+
 **Adopted by the Board of Directors**
 
 | Director | Role | Signature | Date |
@@ -139,8 +149,10 @@
 ### Open items to resolve before finalizing (flagged throughout as [TBD]):
 - [ ] Identify and confirm independent director(s) — gates most other decisions
 - [ ] Board size and exact independence threshold (2.2)
+- [ ] Real legal names/SSN-ITIN for federal filings, even if directors serve pseudonymously in public-facing material (2.3)
 - [ ] Officer roles and who holds them (Article 4)
 - [ ] Multisig key holders including independent-key question (7.4)
 - [ ] Dissolution recipient — name one now or leave to future Board determination (10.2)
 - [ ] Repo/domain disposition on dissolution (10.3)
+- [ ] Whether to purchase D&O insurance and at what coverage level (11.2)
 - [ ] Attorney review in your formation state before adoption
