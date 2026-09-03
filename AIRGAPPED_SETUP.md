@@ -12,14 +12,66 @@ funds.
 
 ## 1. Hardware
 
-- Use an existing laptop rather than buying one for this purpose alone — a
-  machine's history and provenance don't add security here, only the fact
-  that it will never touch a network again.
-- Physically remove the Wi-Fi/Bluetooth card if practical, or disable both
-  in BIOS/UEFI settings. Also disable them in the OS once installed, as a
-  second layer.
+Getting real confidence that a machine is both offline and trustworthy
+involves more than one setting, and doing it well isn't necessarily easy or
+for everyone. No single step below is sufficient on its own — think of them
+as levels of assurance that add up, not a checkbox to clear:
+
+- **Prefer a machine with known history and provenance** over an unknown or
+  second-hand one, when you have the choice. Provenance doesn't guarantee a
+  clean machine — a brand-new laptop isn't automatically trustworthy either
+  — but it's one real input into your confidence in the system, not
+  irrelevant. For a machine that will handle bitcoin private key material,
+  don't discard it.
+- **Wipe the disk (not just reformat) and install a verified OS from
+  verified media** (see [Section 2](#2-get-the-os-on-a-separate-networked-machine)).
+  This addresses disk-level compromise, but not everything: malware or
+  implants can live in firmware, UEFI/BIOS, or other components a disk wipe
+  never touches. There is no simple, universally-available way to rule that
+  out on arbitrary hardware.
+- **Physically remove the Wi-Fi/Bluetooth card where practical.** This is
+  meaningfully different from disabling radios in the OS or BIOS/UEFI —
+  software/firmware settings can be misconfigured, reset, or overridden by
+  something that already has enough access to matter. Treat disabling radios
+  in BIOS/UEFI and the OS as an additional layer of defense, not as proof
+  that the machine has no functioning radio hardware.
+- **Keep the machine permanently offline once it's set up.** No software
+  update, no "just this once" — see [Section 4](#4-transfer-and-use).
 - Cover the camera and microphone if present.
-- Fully wipe the disk (not just reformat) before installing anything.
+
+### The limits of an air gap: side-channel and covert-channel leakage
+
+Being offline stops ordinary network exfiltration. It does not stop
+information from leaving the machine, or being read off it, through
+physical channels — and this applies for as long as you use the machine,
+not just during setup.
+
+**If the machine is already compromised** (or something near it is),
+malware doesn't need a network to exfiltrate data. It can encode secrets
+into channels a network monitor would never see: speaker output (audible or
+ultrasonic), keystroke timing, fan speed or hard-drive actuator noise, power
+draw on the CPU or PSU (measurable as fluctuations on a shared power line),
+electromagnetic emissions from cables or the CPU, blinking status LEDs, or
+even heat output — for a nearby microphone, camera, power-line tap, or other
+receiving device to pick up. Fully wiping the disk does not address any of
+these if the compromise lives in firmware or hardware rather than the OS.
+
+**Even on a clean machine with Wi-Fi/Bluetooth off**, passive physical
+leakage doesn't require any prior compromise at all: keystroke acoustics,
+electromagnetic emissions from the CPU/display/cables, power-consumption
+analysis correlated with cryptographic operations, acoustic emissions from
+components like coils and power-supply parts, mechanical vibration, and
+optical/EM leakage from the display are all real, studied attack classes.
+
+Most of these require specialized equipment and physical proximity a casual
+attacker won't have, and this guide doesn't attempt to defend against all of
+them. The point is narrower: **"offline" is not the same claim as "cannot
+leak."** If your threat model includes a well-resourced or physically
+proximate adversary, treat the steps above as a starting point rather than a
+complete answer, and research shielding, enclosures, and physical-isolation
+practices separately. See also
+[SECURITY.md](SECURITY.md#security-considerations) — "None of this protects
+against a compromised machine" applies here too.
 
 ## 2. Get the OS on a separate, networked machine
 
